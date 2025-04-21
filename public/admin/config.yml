@@ -2,21 +2,22 @@ backend:
   name: git-gateway
   branch: main
 
-media_folder: "public/assets/blog"
-public_folder: "/assets/blog"
+media_folder: "public/assets/images"
+public_folder: "src/game_details"
 
 collections:
-  - name: "blog"
-    label: "Blog"
-    folder: "src/blog"
+
+  - name: "games"
+    label: "Games"
+    folder: "src/game_details"
     create: true
-    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    slug: "{{slug}}"
     fields:
       - { label: "Title", name: "title", widget: "string" }
-      - { label: "Description", name: "description", widget: "string" }
-      - { label: "Author", name: "author", widget: "string" }
-      - { label: "Date", name: "date", widget: "datetime" }
-      - { label: "Tags", name: "tags", widget: "list", default: ["post"] }
-      - { label: "Featured Image", name: "image", widget: "image" }
-      - { label: "Image Caption", name: "imageAlt", widget: "string" }
-      - { label: "Body", name: "body", widget: "markdown" }
+      - { label: "Tags", name: "tags", widget: "list", default: ["game"] }
+      - { label: "Logo", name: "logo", widget: "image" }
+      - { label: "Bonus", name: "bonus", widget: "string" }
+      - { label: "Minimum Withdraw", name: "withdraw", widget: "string" }
+      - { label: "Link", name: "link", widget: "string" }
+      - { label: "Rank", name: "rank", widget: "number", min: 1 }
+

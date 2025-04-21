@@ -1,7 +1,7 @@
 ---
 title: "Yono Arcade"
 tags: ["game", "featured"]
-logo: "img/yono-arcade-apk-logo.webp"
+logo: "https://yonopr.netlify.app/assets/images/image.png"
 bonus: "₹40"
 withdraw: "₹100"
 link: "yono-arcade/index.html"
