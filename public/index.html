@@ -1,0 +1,639 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   
+    
+  </head>
+  <body>
+    	<div class="wrap">
+
+    
+
+
+
+<header class="appallrummy flex">
+			<div class="flex AllYonoGames_grow">
+				<span><a href="/"><img class="allyonogamescom_logo"
+							src="https://yonovip.io/img/yono-vip-apk-banner-logo.webp" alt="Yono VIP Apk Banner Logo"></a>
+				</span>
+			</div>
+			<a href="#" class="search2" target="_blank"><img src="https://yonovip.io/img/telegram-join.webp"
+					alt="All Yono Games Telegram"></a>
+			
+		</header>
+		<nav class="bg nav_bar">
+			<ul>
+				<li class="current"><a href="index.html"><span class="fa fa-home"></span> Home</a></li>
+				<li><a href="#"><span class="fa fa-address-book"></span> About</a></li>
+				<li><a href="#"><span class="fa fa-phone-square"></span> Promote</a></li>
+				<li><a href="#"><span class="fa fa-shield"></span> Policy</a></li>
+				<li><a href="#"><span class="fa fa-vcard-o"></span> T&C</a></li>
+			</ul>
+		</nav>
+    
+      
+<link rel="stylesheet" href="src/style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<style>
+
+	@charset "utf-8";
+@import '../../cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css';
+
+/* Reset and Base */
+html {
+    font-size: 100px;
+}
+
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, code,
+form, fieldset, legend, input, button, textarea, p, blockquote, th, td {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-size: .24rem;
+    font-family: poppins, sans-serif;
+    line-height: 1.5;
+    color: #333;
+    background-color: #ebebeb;
+    position: relative;
+    text-transform: capitalize;
+}
+
+fieldset, img {
+    border: 0;
+}
+
+img {
+    display: block;
+    border: 0;
+}
+
+ol, ul {
+    list-style: none;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-size: 100%;
+    font-weight: 400;
+}
+
+a {
+    color: rgb(255 214 0);
+    text-decoration: none;
+}
+
+i {
+    font-style: normal;
+    font-weight: 400;
+}
+
+.flex {
+    display: flex;
+}
+
+.hide {
+    display: none;
+}
+
+.wrap {
+    width: 100%;
+    max-width: 7.5rem;
+    min-width: 3.2rem;
+    margin: 0 auto;
+    background-color: #fff;
+    overflow: hidden;
+}
+
+.btn:hover {
+    background-color: red;
+    opacity: .9;
+    transform: scale(.96);
+}
+
+/* Header */
+header {
+    height: .62rem;
+    background: #a01b00;
+    font-size: .32rem;
+    padding: .13rem 0;
+    position: relative;
+}
+
+header i,
+.headerNav ul li a i {
+    display: block;
+}
+
+.headerNav {
+    width: 100%;
+    max-width: 7.5rem;
+    position: absolute;
+    top: .9rem;
+    left: 50%;
+    margin-left: -3.75rem;
+    z-index: 98;
+}
+
+.headerNav ul {
+    flex-wrap: wrap;
+    padding: .05rem 0 .25rem;
+    background: #f2fff7;
+    position: absolute;
+    z-index: 99;
+}
+
+.headerNav ul li {
+    margin: .2rem 0 0 .2rem;
+}
+
+.headerNav ul li a {
+    display: block;
+    width: 2.22rem;
+    height: .72rem;
+    line-height: .72rem;
+    color: #fff;
+    background: #a01b00;
+    font-size: .32rem;
+    border-radius: .1rem;
+    text-align: center;
+}
+
+.headerNav .mask {
+    width: 7.5rem;
+    height: 100%;
+    position: absolute;
+    top: .9rem;
+    background: rgba(0, 0, 0, .5);
+}
+
+header .allyonogamescom_logo {
+    width: 4rem;
+    margin-top: .03rem;
+    margin-left: .2rem;
+    display: block;
+    height: 90%;
+}
+
+header .txt {
+    height: .4rem;
+    line-height: .4rem;
+    margin-top: .18rem;
+}
+
+header .txt span {
+    width: 2.6rem;
+    height: .4rem;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.search2 {
+    display: inline;
+}
+
+header .search2 img {
+    width: 1.25rem;
+    height: .56rem;
+    margin-right: .2rem;
+    margin-top: .02rem;
+}
+
+header .menu2 {
+    padding: .075rem .2rem 0 0;
+    cursor: pointer;
+}
+
+header .menu2 i {
+    width: .5rem;
+    height: .5rem;
+}
+
+/* Navigation */
+nav {
+    border-bottom: 1px solid #eaeaea;
+    width: 100%;
+    overflow: hidden;
+}
+
+nav ul {
+    overflow-x: auto;
+    white-space: nowrap;
+    font-size: 0;
+    -ms-overflow-style: none;
+}
+
+nav li {
+    display: inline-block;
+    width: 20%;
+    border-bottom: .04rem solid transparent;
+    padding: .18rem 0 .15rem;
+}
+
+nav li a {
+    display: block;
+    height: .3rem;
+    line-height: .3rem;
+    text-align: center;
+    color: #00182b;
+    font-size: .3rem;
+    font-weight: bold;
+}
+
+nav li.current {
+    border-color: #a01b00;
+    background-color: #ddd;
+}
+
+nav li.current a {
+    color: #a01b00;
+}
+
+/* Footer */
+.footer .devider {
+	width: 100%;
+	border-bottom: 1px solid #baaca973
+}
+
+.footer .links .border {
+	border-right: 1px dashed #afafaf
+}
+
+.footer p {
+	margin: 0;
+	font-size: .24rem
+}
+
+.footer {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding-bottom: .1rem;
+	background-color: #a01b00;
+	color: #fff;
+	font-size: .23rem;
+}
+
+.links {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: .2rem 0 .1rem;
+}
+
+.links a {
+    display: flex;
+    align-items: center;
+    height: .32rem;
+    margin-bottom: .1rem;
+    padding: 0 .3rem;
+    font-size: .26rem;
+    color: #fff;
+    font-weight: bold;
+}
+
+/* Content Sections */
+.onlinejano_com {
+    background-color: #fff;
+    padding: .11rem .2rem .3rem;
+}
+
+.onlinejano_com .HaloLudo_Com {
+    height: .68rem;
+    line-height: .68rem;
+    text-align: center;
+    color: #00070e;
+    font-size: .28rem;
+    border: 1px solid #48001c;
+    cursor: pointer;
+}
+
+.onlinejano_com .HaloLudo_Com span {
+    flex: 1;
+    text-align: center;
+    overflow: hidden;
+    white-space: nowrap;
+    border-right: 1px solid #000;
+    font-weight: 700;
+}
+
+.onlinejano_com .HaloLudo_Com span:last-child {
+    border-right: none;
+}
+
+.onlinejano_com .HaloLudo_Com span.current {
+    color: #fff;
+    background-color: #1b00a0;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+/* List Items */
+.onlinejano_com ul li {
+    padding: .17rem 0;
+    border-bottom: #e3e3e3 .007rem solid;
+    align-items: center;
+}
+
+.onlinejano_com ul li img {
+    display: block;
+    width: 1.18rem;
+    height: 1.18rem;
+    border-radius: .18rem;
+}
+
+.onlinejano_com ul li .info {
+    margin: 0 .28rem 0 .18rem;
+}
+
+.onlinejano_com ul li .info p,
+.onlinejano_com ul li .info .name {
+    font-size: .22rem;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.onlinejano_com ul li .info .name {
+    font-size: .28rem;
+    color: #454545;
+    font-weight: 700;
+    line-height: .48rem;
+}
+
+.onlinejano_com ul li .info .grade {
+    color: #e6e6e6;
+    line-height: .32rem;
+}
+
+.onlinejano_com ul li .info .grade span {
+    color: #ff0000;
+    font-weight: 700;
+}
+
+.onlinejano_com ul li .info .txt {
+    color: #02af27;
+    line-height: .36rem;
+    font-weight: 700;
+    font-size: .2rem;
+}
+
+.onlinejano_com ul li .num {
+    width: .26rem;
+    height: .58rem;
+    font-weight: 700;
+    font-size: .32rem;
+    color: #cecece;
+    line-height: .45rem;
+    text-align: center;
+    position: relative;
+    top: .35rem;
+    margin-right: .2rem;
+}
+
+.onlinejano_com ul li .btn {
+    display: block;
+    line-height: .55rem;
+    margin: 0 auto;
+    border-radius: .1rem;
+    color: #fff;
+    font-size: .24rem;
+    text-align: center;
+    width: 2.05rem;
+    height: .55rem;
+    border: none;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+/* Buttons & Links */
+.btn.allyonogames {
+    background-image: linear-gradient(147deg, #ff9933 0%, #008000 100%);
+    cursor: pointer;
+}
+
+.AllYonoGames_grow {
+    flex-grow: 1;
+}
+
+.all-yono-games-share-link {
+    text-align: center;
+    padding: .06rem .1rem .9rem;
+    background-image: linear-gradient(to right, rgb(113, 45, 0), rgb(33, 69, 90), rgb(113, 45, 0));
+}
+
+.wrap .all-yono-games-share-link span {
+    margin: .1rem;
+    font-size: .34rem;
+    width: 30%;
+    font-weight: 600;
+    color: #fff;
+    cursor: pointer;
+    border: 1px dotted #ff2525;
+    padding: .08rem 0;
+    border-radius: .1rem;
+}
+
+.wrap .all-yono-games-share-link span:hover {
+    color: #e9e9e9;
+}
+
+.wrap .all-yono-games-share-link span:nth-child(1) { background-color: #08c; }
+.wrap .all-yono-games-share-link span:nth-child(2) { background-color: #25d366; }
+.wrap .all-yono-games-share-link span:nth-child(3) { background-color: #3b5998; }
+
+.slider-container {
+			width: 100%;
+			margin: auto;
+			overflow: hidden;
+		}
+
+		.slider {
+			display: flex;
+			transition: transform 0.5s ease-in-out;
+		}
+
+		.slide {
+			min-width: 100%;
+			text-align: center;
+		}
+
+		.slide img {
+			max-width: 100%;
+			height: auto;
+		}
+
+
+        .recomended h2{
+    background-color:#d10000;
+    font-size:.35rem;
+    text-align:center;
+    margin: .15rem .15rem 0 .15rem;
+    padding: .06rem 0;
+    border-radius:.1rem;
+    border:2px solid #000;
+    font-weight:600;
+    color:#fff;
+}
+
+
+
+.AppAllRummy_Notice_Slider {
+	font-family:Sofia,sans-serif;
+	font-size: .25rem;
+	font-weight: bold;
+	color: #fff;
+	background-color: #1b00a0;
+	padding-top: .1rem;
+	font-variant:small-caps;
+	margin-bottom: .1rem;
+}
+
+
+	</style>
+
+<!-- Top 3 Logo -->
+	<div class="allyonogames_com_top">
+		<ul class="flex">
+			<li>
+				<i class="icon_allyonogames_i top2"></i>
+				<a href="jaiho-slots/index.html"> <img src="img/jaiho-slots-apk-logo.webp"
+						alt="Jaiho Slots APK Logo"></a>
+				<h3 class="name">Jaiho Slots</h3>
+				<span class="fa fa-star appallrummy_com_star"></span>
+				<span class="fa fa-star appallrummy_com_star"></span>
+				<span class="fa fa-star appallrummy_com_star"></span>
+				<span class="fa fa-star appallrummy_com_star"></span>
+				<span class="fa fa-star"></span>
+				<p class="grade"><i class="fa fa-check-circle"></i><span>100% Secure Verified</span></p>
+				</a>
+				<a href="jaiho-slots/index.html"> <span class="btn allyonogames"><i class="fa">&#xf0ed;</i> Download
+					</span></a>
+			</li>
+			<li>
+				<i class="icon_allyonogames_i top1"></i>
+				<a href="download.html"> <img src="img/yono-vip-apk-logo.png" alt="Yono VIP APK Logo"></a>
+				<h3 class="name">Yono VIP</h3>
+				<i class="fa fa-star appallrummy_com_star"></i>
+				<i class="fa fa-star appallrummy_com_star"></i>
+				<i class="fa fa-star appallrummy_com_star"></i>
+				<i class="fa fa-star appallrummy_com_star"></i>
+				<i class="fa fa-star appallrummy_com_star"></i>
+				<p class="grade"><i class="fa fa-check-circle"></i><span>100% Secure Verified</span></p>
+				</a>
+				<a href="download.html"><span class="btn allyonogames"><i class="fa">&#xf0ed;</i>
+						Download</span></a>
+			</li>
+			<li>
+				<i class="icon_allyonogames_i top3"></i>
+				<a href="yoyo-slots/index.html"> <img src="img/yoyo-slots-apk-logo.webp" alt="YoYo Slots"></a>
+				<h3 class="name">YoYo Slots</h3>
+				<span class="fa fa-star appallrummy_com_star"></span>
+				<span class="fa fa-star appallrummy_com_star"></span>
+				<span class="fa fa-star appallrummy_com_star"></span>
+				<span class="fa fa-star appallrummy_com_star"></span>
+				<span class="fa fa-star"></span>
+				<p class="grade"><i class="fa fa-check-circle"></i><span>100% Secure Verified</span></p>
+				</a>
+				<a href="yoyo-slots/index.html"><span class="btn allyonogames"><i class="fa">&#xf0ed;</i>
+						Download
+					</span></a>
+			</li>
+		</ul>
+	</div>
+<!-- Top Teen Patti Gold Banner -->
+	<div class="slider-container">
+		<div class="slider" id="imageSlider">
+			<div class="slide">
+				<a href="https://d1pbj5i2ndz972.cloudfront.net/cg/files/4108648bx5siuzozb52sk73s/Gold_k1esh.apk">
+					<img src="src/assets/images/teen-patti-gold-ads-banner.gif" alt="Teen Patti Gold Ads Banner">
+				</a>
+			</div>
+			<div class="slide">
+				<a href="https://download.hotace77.com/a/4c1ef60adb800a75.apk">
+					<img src="img/hot-ace-casino-ads-banner.gif" alt="Hot Ace Casino Ads Banner">
+				</a>
+			</div>
+			<div class="slide">
+				<a href="https://ag.goldrush365.com/dst_apk/Gametpcc-d_2-release-10010396816.apk">
+					<img src="img/bet-54-ads-banner.gif" alt="Bet 54 Ads Banner">
+				</a>
+			</div>
+		</div>
+	</div>
+
+	
+	
+	<!-- Top Teen Patti Gold Banner -->
+	<div class="recomended">
+		<h2><i class="fa">&#xf265;</i>&nbsp;New Yono VIP&nbsp;<i class="fa">&#xf265;</i></h2>
+	</div>
+
+
+<div class="onlinejano_com tab_box bg">
+  <div class="tab_cont">
+    <div class="AllRummyUpdate-Com">
+      <ul>
+    <li class="flex">
+  <a class="flex AllYonoGames_grow" title="Yono Arcade">
+    <img src="img/yono-arcade-apk-logo.webp" alt="Yono Arcade Apk Logo">
+    <div class="info AppAllRummy_grow">
+      <h3 class="name">Yono Arcade</h3>
+      <p class="grade"><span>Sign Up Bonus ₹40</span></p>
+      <p class="txt">Minimum Withdraw ₹100</p>
+    </div>
+  </a>
+  <a class="btn allyonogames" href="yono-arcade/index.html">
+    <i class="fa">&#xf0ed;</i> Download
+  </a>
+</li>
+</ul>
+
+    </div>
+  </div>
+</div>
+
+    
+    
+<div class="AppAllRummy_Notice_Slider">
+		<marquee>About - Friends, if you want to get into the leaderboard of the Yono VIP then you will have to share it
+			with many of your friends.
+			To become a <a href="/" target="_blank" rel="dofollow">Yono VIP</a> member.
+		</marquee>
+	</div>
+
+<div class="footer">
+		<div class="devider"></div>
+		<div class="links">
+			<a href="#" class="border"><span class="fa fa-address-book"></span>&nbsp;About Us</a>
+			<a href="#" class="border"><span class="fa fa-phone-square"></span>&nbsp;Promote</a>
+			<a href="#"><span class="fa fa-shield"></span>&nbsp;Privacy
+				Policy</a>
+			<a href="#" class="border"><span class="fa fa-vcard-o"></span>&nbsp;Terms &
+				Conditions</a>
+			<a href="#"><span class="fa fa-exclamation-circle"></span> &nbsp;Disclaimer</a>
+			<div class="devider"></div>
+		</div>
+		<div class="AppAllRummy-Watermarks">Powered by <a href="https://allyonovip.co.in">AllYonoVIP.CO.IN</a></div>
+		<div class="devider"></div>
+		<div class="copyright">Copyright © 2025<a href="https://allyonovip.co.in"> <strong>YonoVIP.CO.IN</strong> </a>All Rights
+			Reserved.</div>
+	</div>
+</div>
+    <!-- Netlify Identity Script Fix -->
+    <script>
+      if (window.netlifyIdentity) {
+        window.netlifyIdentity.on("init", (user) => {
+          if (!user) {
+            window.netlifyIdentity.on("login", () => {
+              document.location.href = "/admin/";
+            });
+          }
+        });
+      }
+    </script>
+  </body>
+</html>
