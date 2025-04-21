@@ -3,225 +3,772 @@ title: example
 layout: base.njk
 ---
 
-<link rel="stylesheet" href="src/style.css">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 <style>
 
 	@charset "utf-8";
 @import '../../cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css';
 
-/* Reset and Base */
-html {
-    font-size: 100px;
+@charset "utf-8";
+
+body,
+div,
+dl,
+dt,
+dd,
+ul,
+ol,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+pre,
+code,
+form,
+fieldset,
+legend,
+input,
+button,
+textarea,
+p,
+blockquote,
+th,
+td {
+	margin: 0;
+	padding: 0
 }
 
-body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, code,
-form, fieldset, legend, input, button, textarea, p, blockquote, th, td {
-    margin: 0;
-    padding: 0;
+fieldset,
+img {
+	border: 0
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-size: 100%;
+	font-weight: 400
 }
 
 body {
-    font-size: .24rem;
-    font-family: poppins, sans-serif;
-    line-height: 1.5;
-    color: #333;
-    background-color: #ebebeb;
-    position: relative;
-    text-transform: capitalize;
+	line-height: 1.5
 }
 
-fieldset, img {
-    border: 0;
+ol,
+ul {
+	list-style: none
 }
 
-img {
-    display: block;
-    border: 0;
+sup,
+sub {
+	font-size: 100%;
 }
 
-ol, ul {
-    list-style: none;
-}
-
-h1, h2, h3, h4, h5, h6 {
-    font-size: 100%;
-    font-weight: 400;
-}
-
-a {
-    color: rgb(255 214 0);
-    text-decoration: none;
+:link,
+:visited,
+ins {
+	text-decoration: none
 }
 
 i {
-    font-style: normal;
-    font-weight: 400;
+	font-style: normal;
+	font-weight: 400
 }
+
+
+img {
+	display: block;
+	border: 0
+}
+
+html {
+	font-size: 100px
+}
+
+body {
+	font-size: .24rem
+}
+
+body {
+	margin: 0;
+	font-family: poppins, sans-serif;
+	color: #333;
+	background-color: #ebebeb;
+	position: relative;
+	text-transform: capitalize;
+}
+
+a {
+	color: rgb(255 214 0)
+}
+
 
 .flex {
-    display: flex;
+	display: flex
 }
 
-.hide {
-    display: none;
+.AllYonoGames_grow {
+	-moz-flex-grow: 1;
+	flex-grow: 1
 }
 
 .wrap {
-    width: 100%;
-    max-width: 7.5rem;
-    min-width: 3.2rem;
-    margin: 0 auto;
-    background-color: #fff;
-    overflow: hidden;
+	width: 100%;
+	max-width: 7.5rem;
+	min-width: 3.2rem;
+	margin: 0 auto;
+	background-color: #fff;
+	overflow: hidden
+}
+
+.hide {
+	display: none
+}
+
+.appallrummy_com_star {
+	color: orange
+}
+
+.btn.allyonogames {
+	background-image: linear-gradient(147deg, #ff9933 0%, #008000 100%);
+	cursor: pointer
 }
 
 .btn:hover {
-    background-color: red;
-    opacity: .9;
-    transform: scale(.96);
+	background-color: red;
+	opacity: .9;
+	-webkit-transform: scale(.96)
 }
 
-/* Header */
+.allyonoapps_in {
+	position: fixed;
+	margin-right: 10px;
+	top: 50%;
+	margin-top: -100px;
+	-webkit-animation: myfirst 1s infinite linear;
+	animation: myfirst 1s infinite linear
+}
+
+.allyonoapps_in img {
+	width: 60px;
+	height: 60px
+}
+
+.allyonoapps_in {
+	right: 0;
+	z-index: 99999
+}
+
+.icon_allyonogames_i {
+	background-image: url(../img/all-yono-apps_in.html);
+	background-size: 6rem 6.1rem;
+	display: block
+}
+
+.share {
+	padding: 5px 0;
+	background: #fff;
+	width: 100%;
+	display: flex;
+	align-content: center;
+	justify-content: center
+}
+
+.about {
+	padding: 10px 0;
+	background: #1b4789;
+	font-size: .25rem;
+	font-weight: 700;
+	color: #fff;
+	width: 100%;
+	display: flex;
+	align-content: center;
+	justify-content: center
+}
+
+.faqh1 {
+	padding: 10px 0;
+	background: purple;
+	font-size: .25rem;
+	font-weight: 700;
+	color: #fff;
+	width: 100%;
+	display: flex;
+	align-content: center;
+	justify-content: center
+}
+
+.allyonogamesfaq {
+	background-color: #777;
+	color: #fff;
+	cursor: pointer;
+	padding: 18px;
+	width: 100%;
+	border: none;
+	text-align: left;
+	outline: none
+}
+
+.allyonogamesfaq:after {
+	content: '\002B';
+	color: #fff;
+	font-weight: 700;
+	float: right;
+	margin-left: 5px
+}
+
+.active:after {
+	content: "\2212"
+}
+
+.content {
+	padding: 0 18px;
+	max-height: 0;
+	overflow: hidden;
+	transition: max-height .2s ease-out;
+	background-color: #f1f1f1
+}
+
+.allyonogames_com {
+	position: relative;
+	background-color: #fff;
+	width: 100%;
+	height: 2.15rem;
+	overflow: hidden;
+	justify-content: center;
+	align-items: center
+}
+
+.allyonogames_com img {
+	display:block;
+	width:100%;
+	height:100%;
+}
+
+
+
+.allyonogames_com div {
+	position: absolute;
+	z-index: 1;
+	bottom: -.04rem;
+	width: 2.82rem;
+	height: .4rem;
+	background-color: #fff;
+	border-top-left-radius: .1rem;
+	border-top-right-radius: .1rem
+}
+
+.allyonogames_com_top {
+	background-color: #fff
+}
+
+.allyonogames_com_top li {
+	position: relative;
+	text-align: center;
+	margin-bottom: .3rem;
+	text-align: center
+}
+
+.allyonogames_com_top li a {
+	display: block
+}
+
+.allyonogames_com_top li img {
+	display: block;
+	width: 1.24rem;
+	height: 1.24rem;
+	border-radius: .24rem;
+	margin: 0 auto
+}
+
+.allyonogames_com_top li p {
+	color: #ababab;
+	font-size: .22rem;
+	line-height: .42rem;
+	width: 90%;
+	margin: auto;
+	overflow: hidden;
+	white-space: nowrap
+}
+
+.allyonogames_com_top li .name {
+	height: .6rem;
+	line-height: .6rem;
+	color: #454545;
+	font-size: .26rem;
+	font-weight: 700
+}
+
+.allyonogames_com_top ul li .grade {
+	color: #e6e6e6;
+	line-height: .42rem
+}
+
+.allyonogames_com_top ul li .grade span {
+	color: #9a9b9b;
+	font-weight: 700;
+	font-size: .19rem;
+	line-height: .35rem
+}
+
+.allyonogames_com_top ul li .grade em {
+	color: #ffa709;
+	font-size: .24rem
+}
+
+.allyonogames_com_top ul li .grade i {
+	display: inline-block;
+	width: .26rem;
+	height: .23rem;
+	background-position: -1.91rem -1.69rem;
+	top: .04rem;
+	color: #00b00c
+}
+
+.allyonogames_com_top li .btn {
+	display: block;
+	width: 2rem;
+	height: .55rem;
+	text-align: center;
+	line-height: .55rem;
+	margin: .16rem auto 0;
+	border-radius: .06rem;
+	color: #fff;
+	font-size: .24rem;
+	font-weight: 700
+}
+
+.allyonogames_com_top li:nth-child(2) img {
+	width: 1.4rem;
+	height: 1.4rem
+}
+
+.allyonogames_com_top li:nth-child(2) {
+	padding-top: .1rem;
+	width: 35%
+}
+
+.allyonogames_com_top li:nth-child(1),
+.allyonogames_com_top li:nth-child(3) {
+	padding-top: .45rem;
+	width: 32.5%
+}
+
+.allyonogames_com_top li .top1 {
+	width: .58rem;
+	height: .8rem;
+	background-position: -3.5rem -.88rem;
+	position: absolute;
+	z-index: 2;
+	top: -.69rem;
+	left: 50%;
+	margin-left: -.25rem
+}
+
+.allyonogames_com_top li .top2 {
+	width: .57rem;
+	height: .8rem;
+	background-position: -4.34rem -.85rem;
+	position: absolute;
+	z-index: 2;
+	top: -.4rem;
+	left: 50%;
+	margin-left: -.25rem
+}
+
+.allyonogames_com_top li .top3 {
+	width: .57rem;
+	height: .8rem;
+	background-position: -5.19rem -.84rem;
+	position: absolute;
+	z-index: 2;
+	top: -.4rem;
+	left: 50%;
+	margin-left: -.25rem
+}
+
+
+
+.AllYonoGames_APK-Banner img{
+	display:block;
+	width:100%;
+	height:100%;
+}
+
+.wrap .webLink {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    align-items: center;
+    width: 100%;
+    font-size: 0.28rem;
+    font-weight: 600;
+    color: #FFFFFF;
+    padding-bottom: 0.1rem;
+    padding-top: 0.1rem;
+    background-image: linear-gradient(to right, rgb(113, 45, 0), rgb(33, 69, 90), rgb(33, 69, 90), rgb(113, 45, 0));
+}
+
+.recomended h2{
+    background-color:#d10000;
+    font-size:.35rem;
+    text-align:center;
+    margin: .15rem .15rem 0 .15rem;
+    padding: .06rem 0;
+    border-radius:.1rem;
+    border:2px solid #000;
+    font-weight:600;
+    color:#fff;
+}
+
+.all-yono-games-share-link {
+    background-image: linear-gradient(to right, rgb(113, 45, 0), rgb(33, 69, 90), rgb(33, 69, 90), rgb(113, 45, 0));
+
+}
+
+.telegram {
+    font-weight: bold;
+    background-color:#0088cc;
+    color: white;
+    font-size:.3rem;
+    padding: .05rem 0;
+    text-align:center;
+    margin:.15rem;
+    border-radius:.1rem;
+    border:2px solid #000;
+}
+.telegram a{
+    color: white;
+}
+
+.telegram:hover{
+    background-color: #00aaff;
+	color: #ebeaea;
+	-webkit-transform: scale(.99)
+
+}
+
+
+.Halo_Ludo_Com {
+	padding-left: .2rem;
+	padding-right: .2rem;
+	background-color: #fff;
+    font-size: .25rem
+}
+.Halo_Ludo_Com img{
+	display:block;
+	width:100%;
+	height:100%;
+}
+
+.Halo_Ludo_Com p {
+	font-size: .3rem;
+	font-family: Arial, Helvetica, sans-serif;
+    margin-top: .05rem;
+}
+
+.Halo_Ludo_Com h1 {
+    font-size: .4rem;
+	text-align: center;
+	margin-bottom: 15px;
+	margin-top: 10px;
+	font-weight: 700
+}
+
+.Halo_Ludo_Com h2 {
+    font-size: .3rem;
+	text-align: center;
+	font-weight: 700
+}
+
+.Halo_Ludo_Com h3 {
+    font-size: .22rem;
+	text-align: center;
+	font-weight: 700
+}
+.onlinejano_com {
+	background-color: #fff;
+	padding: .11rem .2rem .3rem
+}
+
+.onlinejano_com .HaloLudo_Com {
+	height: .68rem;
+	line-height: .68rem;
+	text-align: center;
+	color: #00070e;
+	font-size: .28rem;
+	border: 1px solid #48001c;
+	cursor: pointer
+}
+
+.onlinejano_com .HaloLudo_Com span {
+	flex: 1;
+	text-align: center;
+	overflow: hidden;
+	white-space: nowrap;
+	border-right: 1px solid #000;
+	font-weight: 700
+}
+
+.onlinejano_com .HaloLudo_Com span:last-child {
+	border-right: none
+}
+
+.onlinejano_com .HaloLudo_Com span.current {
+	color: #fff;
+	background-color: #1b00a0;
+	font-weight: 700;
+	cursor: pointer
+}
+
+.onlinejano_com ul li {
+	padding-top: .17rem;
+	padding-bottom: .17rem;
+	border-bottom: #e3e3e3 .007rem solid;
+	align-items: center
+}
+
+.onlinejano_com ul li img {
+	display: block;
+	width: 1.18rem;
+	height: 1.18rem;
+	border-radius: .18rem
+}
+
+.onlinejano_com ul li .info {
+	margin: 0 .28rem 0 .18rem
+}
+
+.onlinejano_com ul li .info p {
+	display: block;
+	width: auto;
+	overflow: hidden;
+	white-space: nowrap;
+	font-size: .22rem
+}
+
+.onlinejano_com ul li .info .name {
+	font-size: .28rem;
+	color: #454545;
+	font-weight: 500;
+	line-height: .48rem;
+	font-weight: 700
+}
+
+.onlinejano_com ul li .info .grade {
+	color: #e6e6e6;
+	line-height: .32rem
+}
+
+.onlinejano_com ul li .info .grade span {
+	color: #ff0000;
+	font-weight: 700
+}
+
+
+.onlinejano_com ul li .info .txt {
+	color: #02af27;
+	line-height: .36rem;
+	font-weight: 700;
+	font-size: .2rem
+}
+
+
+.onlinejano_com ul li .num {
+	display: block;
+	width: .26rem;
+	height: .58rem;
+	font-weight: 700;
+	font-size: .32rem;
+	color: #cecece;
+	line-height: .45rem;
+	text-align: center;
+	position: relative;
+	top: .35rem;
+	left: 0;
+	margin-right: .2rem
+}
+
+.onlinejano_com ul li .btn {
+	display: block;
+	line-height: .55rem;
+	margin: 0 Auto;
+	border-radius: .06rem;
+	color: #fff;
+	font-size: .24rem;
+	text-align: center;
+	width: 2.05rem;
+	height: .55rem;
+	border: none;
+	font-weight: 700;
+	cursor: pointer;
+	border-radius: .1rem
+}
+
 header {
-    height: .62rem;
-    background: #a01b00;
-    font-size: .32rem;
-    padding: .13rem 0;
-    position: relative;
+	height: .62rem;
+	background: #a01b00;
+	font-size: .32rem;
+	padding: .13rem 0;
+	position: relative
 }
 
-header i,
-.headerNav ul li a i {
-    display: block;
+header i {
+	display: block
 }
 
 .headerNav {
-    width: 100%;
-    max-width: 7.5rem;
-    position: absolute;
-    top: .9rem;
-    left: 50%;
-    margin-left: -3.75rem;
-    z-index: 98;
+	width: 100%;
+	max-width: 7.5rem;
+	position: absolute;
+	top: .9rem;
+	left: 50%;
+	margin-left: -3.75rem;
+	z-index: 98
 }
 
 .headerNav ul {
-    flex-wrap: wrap;
-    padding: .05rem 0 .25rem;
-    background: #f2fff7;
-    position: absolute;
-    z-index: 99;
+	flex-wrap: wrap;
+	padding: .05rem 0 .25rem;
+	z-index: 99;
+	position: absolute;
+	background: #f2fff7
 }
 
 .headerNav ul li {
-    margin: .2rem 0 0 .2rem;
+	margin: .2rem 0 0 .2rem
 }
 
 .headerNav ul li a {
-    display: block;
-    width: 2.22rem;
-    height: .72rem;
-    line-height: .72rem;
-    color: #fff;
-    background: #a01b00;
-    font-size: .32rem;
-    border-radius: .1rem;
-    text-align: center;
+	display: block;
+	width: 2.22rem;
+	height: .72rem;
+	line-height: .72rem;
+	color: #fff;
+	background: #a01b00;
+	font-size: .32rem;
+	border-radius: .1rem;
+	text-align: center
+}
+
+.headerNav ul li a i {
+	display: inline-block;
+	width: .38rem;
+	height: .38rem;
+	position: relative;
+	top: .05rem;
+	margin-right: .1rem
 }
 
 .headerNav .mask {
-    width: 7.5rem;
-    height: 100%;
-    position: absolute;
-    top: .9rem;
-    background: rgba(0, 0, 0, .5);
+	width: 7.5rem;
+	height: 100%;
+	position: absolute;
+	top: .9rem;
+	background: rgba(0, 0, 0, .5)
 }
 
-header .allyonogamescom_logo {
-    width: 4rem;
-    margin-top: .03rem;
-    margin-left: .2rem;
-    display: block;
-    height: 90%;
-}
-
-header .txt {
-    height: .4rem;
-    line-height: .4rem;
-    margin-top: .18rem;
-}
-
-header .txt span {
-    width: 2.6rem;
-    height: .4rem;
-    overflow: hidden;
-    white-space: nowrap;
-}
-
-.search2 {
-    display: inline;
-}
-
-header .search2 img {
-    width: 1.25rem;
-    height: .56rem;
-    margin-right: .2rem;
-    margin-top: .02rem;
-}
-
-header .menu2 {
-    padding: .075rem .2rem 0 0;
-    cursor: pointer;
-}
-
-header .menu2 i {
-    width: .5rem;
-    height: .5rem;
-}
-
-/* Navigation */
 nav {
-    border-bottom: 1px solid #eaeaea;
-    width: 100%;
-    overflow: hidden;
-}
-
-nav ul {
-    overflow-x: auto;
-    white-space: nowrap;
-    font-size: 0;
-    -ms-overflow-style: none;
+	border-bottom: 1px solid #eaeaea;
+	width: 100%;
+	overflow: hidden
 }
 
 nav li {
-    display: inline-block;
-    width: 20%;
-    border-bottom: .04rem solid transparent;
-    padding: .18rem 0 .15rem;
+	display: inline-block;
+	width: 20%;
+	border-bottom: .04rem solid transparent;
+	padding: .18rem 0 .15rem
 }
 
 nav li a {
-    display: block;
-    height: .3rem;
-    line-height: .3rem;
-    text-align: center;
-    color: #00182b;
-    font-size: .3rem;
-    font-weight: bold;
+	display: block;
+	height: .3rem;
+	line-height: .3rem;
+	text-align: center;
+	color: #00182b;
+	font-size: .3rem;
+	font-weight: bold;
 }
 
 nav li.current {
-    border-color: #a01b00;
-    background-color: #ddd;
+	border-color: #a01b00;
+	background-color: #ddd;
 }
 
 nav li.current a {
-    color: #a01b00;
+	color: #a01b00;
+
 }
 
-/* Footer */
+nav li:last-child a {
+	border: none
+}
+
+nav ul {
+	overflow-x: auto;
+	white-space: nowrap;
+	font-size: 0;
+	overflow-x: -moz-scrollbars-none;
+	-ms-overflow-style: none
+}
+
+header.appallrummy a {
+	color: #fff;
+	font-weight: bold;
+}
+
+header .allyonogamescom_logo {
+	width: 4rem;
+	margin-top: .03rem;
+	margin-left: .2rem;
+	display:block;
+	height:90%;
+}
+
+header .txt {
+	height: .4rem;
+	line-height: .4rem;
+	margin-top: .18rem;
+	margin-left: 0
+}
+
+header .txt span {
+	width: 2.6rem;
+	height: .4rem;
+	overflow: hidden;
+	white-space: nowrap
+}
+
+.search2{
+	display:inline
+
+}
+
+header .search2 img{
+	width:1.25rem;
+	height:.56rem;
+	margin-right:.2rem;
+	margin-top:.02rem;
+}
+
+header .menu2 {
+	padding: .075rem .2rem 0 0;
+	cursor: pointer
+}
+
+header .menu2 i {
+	width: .5rem;
+	height: .5rem;
+}
+
 .footer .devider {
 	width: 100%;
 	border-bottom: 1px solid #baaca973
@@ -246,220 +793,88 @@ nav li.current a {
 	font-size: .23rem;
 }
 
+.AppAllRummy-Watermarks {
+	color: rgb(255, 170, 0);
+	margin: 0 .01rem;
+	margin-bottom: .1rem;
+	font-size: .25rem;
+	font-weight: bold;
+}
+
+
+.copyright {
+	text-align: center;
+	margin-top: .1rem;
+	font-size: .25rem
+}
+
+.copyright a {
+	text-decoration: none;
+	color: #fff
+}
+
 .links {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    margin: .2rem 0 .1rem;
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	margin-top: .2rem;
+	margin-bottom: .1rem
 }
 
 .links a {
-    display: flex;
-    align-items: center;
-    height: .32rem;
-    margin-bottom: .1rem;
-    padding: 0 .3rem;
-    font-size: .26rem;
-    color: #fff;
-    font-weight: bold;
+	display: flex;
+	font-family: "Microsoft Yahei", Arial, Tahoma, Helvetica, SimSun, "Hiragino Sans GB", sans-serif;
+	align-items: center;
+	height: .32rem;
+	margin-bottom: .1rem;
+	padding: 0 .3rem;
+	font-size: .26rem;
+	text-decoration: none;
+	color: #fff;
+	font-weight: bold;
 }
 
-/* Content Sections */
-.onlinejano_com {
-    background-color: #fff;
-    padding: .11rem .2rem .3rem;
-}
 
-.onlinejano_com .HaloLudo_Com {
-    height: .68rem;
-    line-height: .68rem;
-    text-align: center;
-    color: #00070e;
-    font-size: .28rem;
-    border: 1px solid #48001c;
-    cursor: pointer;
-}
-
-.onlinejano_com .HaloLudo_Com span {
-    flex: 1;
-    text-align: center;
-    overflow: hidden;
-    white-space: nowrap;
-    border-right: 1px solid #000;
-    font-weight: 700;
-}
-
-.onlinejano_com .HaloLudo_Com span:last-child {
-    border-right: none;
-}
-
-.onlinejano_com .HaloLudo_Com span.current {
-    color: #fff;
-    background-color: #1b00a0;
-    font-weight: 700;
-    cursor: pointer;
-}
-
-/* List Items */
-.onlinejano_com ul li {
-    padding: .17rem 0;
-    border-bottom: #e3e3e3 .007rem solid;
-    align-items: center;
-}
-
-.onlinejano_com ul li img {
-    display: block;
-    width: 1.18rem;
-    height: 1.18rem;
-    border-radius: .18rem;
-}
-
-.onlinejano_com ul li .info {
-    margin: 0 .28rem 0 .18rem;
-}
-
-.onlinejano_com ul li .info p,
-.onlinejano_com ul li .info .name {
-    font-size: .22rem;
-    white-space: nowrap;
-    overflow: hidden;
-}
-
-.onlinejano_com ul li .info .name {
-    font-size: .28rem;
-    color: #454545;
-    font-weight: 700;
-    line-height: .48rem;
-}
-
-.onlinejano_com ul li .info .grade {
-    color: #e6e6e6;
-    line-height: .32rem;
-}
-
-.onlinejano_com ul li .info .grade span {
-    color: #ff0000;
-    font-weight: 700;
-}
-
-.onlinejano_com ul li .info .txt {
-    color: #02af27;
-    line-height: .36rem;
-    font-weight: 700;
-    font-size: .2rem;
-}
-
-.onlinejano_com ul li .num {
-    width: .26rem;
-    height: .58rem;
-    font-weight: 700;
-    font-size: .32rem;
-    color: #cecece;
-    line-height: .45rem;
-    text-align: center;
-    position: relative;
-    top: .35rem;
-    margin-right: .2rem;
-}
-
-.onlinejano_com ul li .btn {
-    display: block;
-    line-height: .55rem;
-    margin: 0 auto;
-    border-radius: .1rem;
-    color: #fff;
-    font-size: .24rem;
-    text-align: center;
-    width: 2.05rem;
-    height: .55rem;
-    border: none;
-    font-weight: 700;
-    cursor: pointer;
-}
-
-/* Buttons & Links */
-.btn.allyonogames {
-    background-image: linear-gradient(147deg, #ff9933 0%, #008000 100%);
-    cursor: pointer;
-}
-
-.AllYonoGames_grow {
-    flex-grow: 1;
-}
 
 .all-yono-games-share-link {
-    text-align: center;
-    padding: .06rem .1rem .9rem;
-    background-image: linear-gradient(to right, rgb(113, 45, 0), rgb(33, 69, 90), rgb(113, 45, 0));
+	text-align: center;
+	padding-top: .06rem;
+	padding-bottom: .9rem;
+	padding-left: .1rem;
 }
 
 .wrap .all-yono-games-share-link span {
-    margin: .1rem;
-    font-size: .34rem;
-    width: 30%;
-    font-weight: 600;
-    color: #fff;
-    cursor: pointer;
-    border: 1px dotted #ff2525;
-    padding: .08rem 0;
-    border-radius: .1rem;
+	margin: .1rem;
+	font-size: .34rem;
+	width: 30%;
+	font-weight: 600;
+	color: #fff;
+	cursor: pointer;
+	border: 1px dotted #ff2525;
+	padding: .08rem 0;
 }
 
 .wrap .all-yono-games-share-link span:hover {
-    color: #e9e9e9;
+	color: #e9e9e9;
 }
 
-.wrap .all-yono-games-share-link span:nth-child(1) { background-color: #08c; }
-.wrap .all-yono-games-share-link span:nth-child(2) { background-color: #25d366; }
-.wrap .all-yono-games-share-link span:nth-child(3) { background-color: #3b5998; }
-
-.slider-container {
-			width: 100%;
-			margin: auto;
-			overflow: hidden;
-		}
-
-		.slider {
-			display: flex;
-			transition: transform 0.5s ease-in-out;
-		}
-
-		.slide {
-			min-width: 100%;
-			text-align: center;
-		}
-
-		.slide img {
-			max-width: 100%;
-			height: auto;
-		}
-
-
-        .recomended h2{
-    background-color:#d10000;
-    font-size:.35rem;
-    text-align:center;
-    margin: .15rem .15rem 0 .15rem;
-    padding: .06rem 0;
-    border-radius:.1rem;
-    border:2px solid #000;
-    font-weight:600;
-    color:#fff;
+.all-yono-games-share-link span:first-child {
+	float: left;
+	background-color: #08c;
+	border-radius: .1rem;
 }
 
-
-
-.AppAllRummy_Notice_Slider {
-	font-family:Sofia,sans-serif;
-	font-size: .25rem;
-	font-weight: bold;
-	color: #fff;
-	background-color: #1b00a0;
-	padding-top: .1rem;
-	font-variant:small-caps;
-	margin-bottom: .1rem;
+.all-yono-games-share-link span:nth-child(2) {
+	float: left;
+	background-color: #25d366;
+	border-radius: .1rem;
 }
 
+.all-yono-games-share-link span:nth-child(3) {
+	float: left;
+	background-color: #3b5998;
+	border-radius: .1rem;
+}
 
 	</style>
 
@@ -468,9 +883,9 @@ nav li.current a {
 		<ul class="flex">
 			<li>
 				<i class="icon_allyonogames_i top2"></i>
-				<a href="jaiho-slots/index.html"> <img src="img/jaiho-slots-apk-logo.webp"
-						alt="Jaiho Slots APK Logo"></a>
-				<h3 class="name">Jaiho Slots</h3>
+				<a href="#"> <img src="images/dd-game-logo.png" alt="DD Games Logo">
+						</a>
+				<h3 class="name">DD GAMES APPS</h3>
 				<span class="fa fa-star appallrummy_com_star"></span>
 				<span class="fa fa-star appallrummy_com_star"></span>
 				<span class="fa fa-star appallrummy_com_star"></span>
@@ -478,13 +893,13 @@ nav li.current a {
 				<span class="fa fa-star"></span>
 				<p class="grade"><i class="fa fa-check-circle"></i><span>100% Secure Verified</span></p>
 				</a>
-				<a href="jaiho-slots/index.html"> <span class="btn allyonogames"><i class="fa">&#xf0ed;</i> Download
+				<a href="#"> <span class="btn allyonogames"><i class="fa">&#xf0ed;</i> Download
 					</span></a>
 			</li>
 			<li>
 				<i class="icon_allyonogames_i top1"></i>
-				<a href="download.html"> <img src="img/yono-vip-apk-logo.png" alt="Yono VIP APK Logo"></a>
-				<h3 class="name">Yono VIP</h3>
+				<a href="#"> <img src="images/game3f_logo.png" alt="Yono VIP APK Logo"></a>
+				<h3 class="name">Game3f</h3>
 				<i class="fa fa-star appallrummy_com_star"></i>
 				<i class="fa fa-star appallrummy_com_star"></i>
 				<i class="fa fa-star appallrummy_com_star"></i>
@@ -492,13 +907,13 @@ nav li.current a {
 				<i class="fa fa-star appallrummy_com_star"></i>
 				<p class="grade"><i class="fa fa-check-circle"></i><span>100% Secure Verified</span></p>
 				</a>
-				<a href="download.html"><span class="btn allyonogames"><i class="fa">&#xf0ed;</i>
+				<a href="#"><span class="btn allyonogames"><i class="fa">&#xf0ed;</i>
 						Download</span></a>
 			</li>
 			<li>
 				<i class="icon_allyonogames_i top3"></i>
-				<a href="yoyo-slots/index.html"> <img src="img/yoyo-slots-apk-logo.webp" alt="YoYo Slots"></a>
-				<h3 class="name">YoYo Slots</h3>
+				<a href="#"> <img src="images/sona_logo.png" alt="YoYo Slots"></a>
+				<h3 class="name">sona teen patti</h3>
 				<span class="fa fa-star appallrummy_com_star"></span>
 				<span class="fa fa-star appallrummy_com_star"></span>
 				<span class="fa fa-star appallrummy_com_star"></span>
@@ -506,32 +921,13 @@ nav li.current a {
 				<span class="fa fa-star"></span>
 				<p class="grade"><i class="fa fa-check-circle"></i><span>100% Secure Verified</span></p>
 				</a>
-				<a href="yoyo-slots/index.html"><span class="btn allyonogames"><i class="fa">&#xf0ed;</i>
+				<a href="#"><span class="btn allyonogames"><i class="fa">&#xf0ed;</i>
 						Download
 					</span></a>
 			</li>
 		</ul>
 	</div>
-<!-- Top Teen Patti Gold Banner -->
-	<div class="slider-container">
-		<div class="slider" id="imageSlider">
-			<div class="slide">
-				<a href="https://d1pbj5i2ndz972.cloudfront.net/cg/files/4108648bx5siuzozb52sk73s/Gold_k1esh.apk">
-					<img src="src/assets/images/teen-patti-gold-ads-banner.gif" alt="Teen Patti Gold Ads Banner">
-				</a>
-			</div>
-			<div class="slide">
-				<a href="https://download.hotace77.com/a/4c1ef60adb800a75.apk">
-					<img src="img/hot-ace-casino-ads-banner.gif" alt="Hot Ace Casino Ads Banner">
-				</a>
-			</div>
-			<div class="slide">
-				<a href="https://ag.goldrush365.com/dst_apk/Gametpcc-d_2-release-10010396816.apk">
-					<img src="img/bet-54-ads-banner.gif" alt="Bet 54 Ads Banner">
-				</a>
-			</div>
-		</div>
-	</div>
+
 
 	
 	
