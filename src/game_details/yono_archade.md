@@ -1,9 +1,11 @@
 ---
-title: "Yono Arcade"
-tags: ["game", "featured"]
-logo: "https://yonopr.netlify.app/assets/images/image.png"
-bonus: "₹40"
-withdraw: "₹100"
-link: "yono-arcade/index.html"
+title: Yono Arcade
+tags:
+  - game
+  - featured
+logo: src/game_details/yoho-slots-apk-logo.webp
+bonus: ₹40
+withdraw: ₹100
+link: https://www.yobao.xyz/
 rank: 1
 ---
