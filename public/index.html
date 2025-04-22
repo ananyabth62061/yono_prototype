@@ -1,8 +1,38 @@
----
-title: example
-layout: base.njk
----
+<!DOCTYPE html>
+<html lang="en" style="font-size: 100px;">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+  </head>
+  <body>
+    <div class="wrap">
+      <header class="appallrummy flex">
+  <div class="flex AllYonoGames_grow logo-wrapper">
+    <a href="index.html" class="flex logo-link">
+      <img class="allyonogamescom_logo" src="https://yonovip.io/img/yono-vip-apk-logo.png" alt="Yono VIP Logo">
+      <span class="site-name">yonovip.co.in</span>
+    </a>
+  </div>
+  <a href="https://t.me/+sqxZugQ--LIzY2Zl" class="search2" target="_blank">
+    <img src="https://yonovip.io/img/telegram-join.webp" alt="Join on Telegram">
+  </a>
+</header>
 
+       <div class="nav-wrapper">
+  <nav class="bg nav_bar">
+    <ul>
+      <li class="current"><a href="index.html"><span class="fa fa-home"></span> Home</a></li>
+      <li><a href="#"><span class="fa fa-address-book"></span> About</a></li>
+      <li><a href="https://t.me/+sqxZugQ--LIzY2Zl"><span class="fa fa-phone-square"></span> Promote</a></li>
+      <li><a href="#"><span class="fa fa-shield"></span> Policy</a></li>
+      <li><a href="#"><span class="fa fa-vcard-o"></span> T&C</a></li>
+    </ul>
+  </nav>
+</div>
+
+      
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 <style>
@@ -906,12 +936,74 @@ a {
   <div class="tab_cont">
     <div class="AllRummyUpdate-Com">
       <ul>
-  {%- for game in collections.games | reverse -%}
-    {% set gameData = game %}
-    {% include "game_snippet.njk" %}
-  {%- endfor -%}
-</ul>
+    <li class="flex">
+  <a class="flex AllYonoGames_grow" title="Dream77" href="https://www.yobao.xyz/" >
+    <img src="https://dream77.space/assets/images/logo.jpg" alt="Dream77 Apk Logo">
+    <div class="info AppAllRummy_grow">
+      <h3 class="name">Dream77</h3>
+      <p class="grade"><span>Sign Up Bonus ₹40</span></p>
+      <p class="txt">Minimum Withdraw ₹100</p>
+    </div>
+  </a>
+  <a class="btn allyonogames" href="https://www.yobao.xyz/">
+    <i class="fa">&#xf0ed;</i> Download
+  </a>
+</li>
+    <li class="flex">
+  <a class="flex AllYonoGames_grow" title="Yono Arcade" href="https://www.yobao.xyz/" >
+    <img src="https://sonateenpatti.co.in/assets/images/image.png" alt="Yono Arcade Apk Logo">
+    <div class="info AppAllRummy_grow">
+      <h3 class="name">Yono Arcade</h3>
+      <p class="grade"><span>Sign Up Bonus ₹40</span></p>
+      <p class="txt">Minimum Withdraw ₹100</p>
+    </div>
+  </a>
+  <a class="btn allyonogames" href="https://www.yobao.xyz/">
+    <i class="fa">&#xf0ed;</i> Download
+  </a>
+</li></ul>
 
     </div>
   </div>
 </div>
+
+      
+<div class="AppAllRummy_Notice_Slider">
+		<marquee>About - Friends, if you want to get into the leaderboard of the Yono VIP then you will have to share it
+			with many of your friends.
+			To become a <a href="/" target="_blank" rel="dofollow">Yono VIP</a> member.
+		</marquee>
+	</div>
+
+<div class="footer">
+		<div class="devider"></div>
+		<div class="links">
+			<a href="#" class="border"><span class="fa fa-address-book"></span>&nbsp;About Us</a>
+			<a href="#" class="border"><span class="fa fa-phone-square"></span>&nbsp;Promote</a>
+			<a href="#"><span class="fa fa-shield"></span>&nbsp;Privacy
+				Policy</a>
+			<a href="#" class="border"><span class="fa fa-vcard-o"></span>&nbsp;Terms &
+				Conditions</a>
+			<a href="#"><span class="fa fa-exclamation-circle"></span> &nbsp;Disclaimer</a>
+			<div class="devider"></div>
+		</div>
+		<div class="AppAllRummy-Watermarks">Powered by <a href="https://allyonovip.co.in">AllYonoVIP.CO.IN</a></div>
+		<div class="devider"></div>
+		<div class="copyright">Copyright © 2025<a href="https://allyonovip.co.in"> <strong>YonoVIP.CO.IN</strong> </a>All Rights
+			Reserved.</div>
+	</div>
+    </div>
+    <!-- Netlify Identity Script Fix -->
+    <script>
+      if (window.netlifyIdentity) {
+        window.netlifyIdentity.on("init", (user) => {
+          if (!user) {
+            window.netlifyIdentity.on("login", () => {
+              document.location.href = "/admin/";
+            });
+          }
+        });
+      }
+    </script>
+  </body>
+</html>
