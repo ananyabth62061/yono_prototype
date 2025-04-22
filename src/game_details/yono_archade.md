@@ -1,9 +1,9 @@
 ---
-title: Yono Arcade
+title: Game3f
 tags:
   - game
   - featured
-logo: https://sonateenpatti.co.in/assets/images/image.png
+logo: /images/game3f_logo.png
 bonus: ₹40
 withdraw: ₹100
 link: https://www.yobao.xyz/

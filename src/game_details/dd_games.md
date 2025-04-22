@@ -3,7 +3,7 @@ title: Dream77
 tags:
   - game
   - featured
-logo: https://dream77.space/assets/images/logo.jpg
+logo: /images/dd-game-logo.png
 bonus: ₹40
 withdraw: ₹100
 link: https://www.yobao.xyz/
