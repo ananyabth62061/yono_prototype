@@ -1,0 +1,27 @@
+User-agent: *
+Disallow: /admin/
+Disallow: /login/
+Disallow: /register/
+Disallow: /tmp/
+Disallow: /private/
+Allow: /
+
+Sitemap: https://yonovip.co.in/sitemap.xml
+
+# Block crawling of duplicate or sensitive query strings
+Disallow: /*?sessionid=
+Disallow: /*?ref=
+
+# Optional: Crawl delay for aggressive bots
+User-agent: AhrefsBot
+Crawl-delay: 10
+
+User-agent: SemrushBot
+Crawl-delay: 10
+
+# Allow all images to be indexed
+User-agent: Googlebot-Image
+Allow: /
+
+# Optional: Prevent internal search results from being indexed
+Disallow: /search
