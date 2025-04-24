@@ -1,5 +1,5 @@
 ---
-title: Dream77
+title: DD games
 tags:
   - game
   - featured
